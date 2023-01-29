@@ -1,0 +1,74 @@
+.quiz--setting-form{
+    margin-top: 1.6rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quiz--selectField-container,
+.quiz--textField{
+    position: relative;
+}
+
+.quiz--selectField-container select,
+.quiz--textField input{
+    width: 20rem;
+    outline: none;
+    border: none;
+    padding: 1rem .2rem;
+    border: 2px solid var(--subtitle-primary);
+    background: transparent;
+    color: var(--subtitle-primary);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.quiz--selectField-container select:focus ~ span,
+.quiz--selectField-container select:valid ~ span,
+.quiz--textField input:focus ~ span,
+.quiz--textField input:valid ~ span{
+    background-color: var(--bg-primary);
+    color: var(--btn-primary);
+    transform: translateX(12px) translateY(-26px);
+    font-size: .8rem;
+    padding: .2rem;
+    transition: .3s;
+}
+
+.quiz--setting-form span,
+.quiz--textField input{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.quiz--setting-form span{
+    position: absolute;
+    top: 1rem;
+    left: .4rem;
+    color: var(--subtitle-primary);
+    pointer-events: none;
+}
+
+.quiz--selectField-container select > option{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: var(--option-primary);
+    color: var(--subtitle-primary);
+    font-family: karla;
+}
+
+.quiz--selectField-container select > option:checked{
+    color: var(--btn-text-primary);
+    background-color: var(--btn-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.quiz--setting-form button{
+    width: 100%;
+}
+
+.quiz--setting-btn{
+    width: 100%;
+}

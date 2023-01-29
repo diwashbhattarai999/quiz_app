@@ -1,0 +1,19 @@
+.quiz--question-para{
+    margin-top: 2rem;
+    width: 95%;
+}
+
+.quiz--question-btns{
+    flex-direction: column;
+    width: 20rem;
+}
+
+.quiz--question-container .quiz--btn{
+    width: 100%;
+    text-align: center;
+}
+
+.quiz--question-container .quiz--question-score{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}

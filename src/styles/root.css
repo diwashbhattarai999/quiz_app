@@ -1,0 +1,21 @@
+.dark-mode{
+    --bg-primary: #1d1e22;
+    --title-primary: #eeecf3;
+    --subtitle-primary: #c6c6cf;
+    /* --btn-primary: #feda6a; */
+    --btn-primary: #ffce3c;
+    --btn-text-primary: #393f4d;
+    --option-primary: #232323;
+    --white: #f6f6f6;
+}
+
+.light-mode{
+    --bg-primary: #f9f9f9;
+    --title-primary: #2f2f2f;
+    --subtitle-primary: #5d5d5d;
+    /* --btn-primary: #ffca2b; */
+    --btn-primary: #ffce3c;
+    --btn-text-primary: #393f4d;
+    --option-primary: #dcdcdc;
+    --white: #191919;
+}
