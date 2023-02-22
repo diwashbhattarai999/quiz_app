@@ -34,10 +34,30 @@ select::-webkit-scrollbar {
   height: 0;
 }
 
+
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.quiz__main {
+  position: relative;
+  width: 100%;
+}
+
+.top__btn {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.darkMode {
+  left: -.4rem;
+}
+
+.quiz__back {
+  right: -.4rem;
 }
 
 .quiz--container {
@@ -70,7 +90,6 @@ select::-webkit-scrollbar {
   margin: 1.4rem 0;
   color: var(--btn-text-primary);
   background-color: var(--btn-primary);
-  transition: .3s linear, color 0s, background-color 0s;
   outline: 3px solid transparent;
   outline-offset: .6rem;
   border-radius: 4px;
@@ -83,6 +102,7 @@ select::-webkit-scrollbar {
 
 .quiz--btn:hover,
 .quiz--btn:focus-visible{
+  transition: .3s linear, color 0s, background-color 0s;
   outline-color: var(--btn-primary);
   outline-offset: .05rem;
 }

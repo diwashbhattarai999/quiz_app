@@ -3,6 +3,12 @@ import { SelectField, TextField, Loading, Error } from "../components";
 import "../styles/Setting.css";
 import useAxios from "../hooks/useAxios";
 import { Link } from "react-router-dom";
+import { motion as m } from "framer-motion";
+import {
+  containerVarients,
+  childVarients,
+  buttonVarients,
+} from "../FramerVarients";
 
 function Setting() {
   const [initialState, setInitialState] = useState({
@@ -41,9 +47,9 @@ function Setting() {
     e.preventDefault();
   };
 
-  const handleClick = () => {
-    setInitialState({});
-  };
+  // const handleClick = () => {
+  //   setInitialState({});
+  // };
 
   const handleText = (text) => {
     setInitialState((prevInitialState) => {
@@ -70,9 +76,20 @@ function Setting() {
   };
 
   return (
-    <div className="quiz--container center">
-      <h1 className="quiz--title">Quiz-App</h1>
-      <form className="quiz--setting-form center" onSubmit={handleSubmit}>
+    <m.div
+      className="quiz--container center"
+      variants={containerVarients}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      <m.h1 className="quiz--title">Quiz-App</m.h1>
+      <m.form
+        className="quiz--setting-form center"
+        onSubmit={handleSubmit}
+        variants={childVarients}
+        // transition={{ delay: 0.6, duration: 0.5 }}
+      >
         <SelectField
           options={response.trivia_categories}
           label="Category"
@@ -99,14 +116,21 @@ function Setting() {
 
         <Link
           to="/Question"
-          className="quiz--btn quiz--setting-btn"
+          className="quiz--setting-btn"
           type="submit"
-          onClick={handleClick}
+          // onClick={handleClick}
         >
-          Get Started
+          <m.button
+            className="quiz--btn"
+            variants={buttonVarients}
+            animate="move"
+            whileHover="hover"
+          >
+            Get Started
+          </m.button>
         </Link>
-      </form>
-    </div>
+      </m.form>
+    </m.div>
   );
 }
 
