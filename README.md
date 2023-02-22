@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Hosted on Netlify
+Open Here  [quiz-app-diwash.netlify.app](https://quiz-app-diwash.netlify.app/) 
+
 ## Available Scripts
 
 In the project directory, you can run:
