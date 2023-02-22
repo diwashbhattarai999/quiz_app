@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--white);
+  height: 100vh;
+  overflow: hidden;
+  font-family: "karla";
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--btn-primary);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz__main {
+  position: relative;
+  width: 100%;
+}
+
+.top__btn {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.darkMode {
+  left: -.4rem;
+}
+
+.quiz__back {
+  right: -.4rem;
+}
+
+.quiz--container {
+  flex-direction: column;
+  height: 100vh;
+  transition: all 0.25s ease-out;
+  padding: 0 1rem;
+}
+
+.quiz--title {
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: var(--title-primary);
+}
+
+.quiz--subtitle {
+  font-family: "karla";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--subtitle-primary);
+  padding-top: 0.6rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+
+.quiz--btn{ 
+  padding: 13px 20px;
+  margin: 1.4rem 0;
+  color: var(--btn-text-primary);
+  background-color: var(--btn-primary);
+  outline: 3px solid transparent;
+  outline-offset: .6rem;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.quiz--btn:hover,
+.quiz--btn:focus-visible{
+  transition: .3s linear, color 0s, background-color 0s;
+  outline-color: var(--btn-primary);
+  outline-offset: .05rem;
+}
+
+.quiz--btn:active {
+  background: var(--color);
+  color: var(--white);
+}
